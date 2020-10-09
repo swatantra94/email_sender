@@ -1,1 +1,6 @@
-<input id="fileSelect" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" name="excel_file" />  
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Select file to upload:
+    <input type="file" name="files" id="fileToUpload">
+    <input type="submit" value="Upload Files" name="submit">
+</form>
