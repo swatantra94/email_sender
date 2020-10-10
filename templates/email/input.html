@@ -2,5 +2,8 @@
     {% csrf_token %}
     Select file to upload:
     <input type="file" name="files" id="fileToUpload">
-    <input type="submit" value="Upload Files" name="submit">
+    <br>
+    {{form}}
+    <br>
+    <input type="submit" value="Send Email" name="submit">
 </form>
