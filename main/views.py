@@ -8,9 +8,6 @@ from django.shortcuts import redirect
 from main import forms
 
 
-def send_email(request):
-    send_mail('Subject here', 'Here is the message.', 'swatantranigam9451@gmail.com',
-    ['swatantranigam9166@gmail.com'], fail_silently=False)
 
 def send_email(request):
     form = forms.WorkshopEmail()
@@ -20,6 +17,7 @@ def send_email(request):
         data = xlsx_get(excel_file, column_limit=1)
         emails = data["Sheet1"]
         list_email=[]
+        print(emails)
         file = open("main/workshop_email.txt","r")
         a=""
         for _ in range(6):
@@ -43,7 +41,7 @@ def send_email(request):
             for email in emails:
                 for i in email:
                     list_email.append(i)
-            print(list_email)
+            
             send_mail('DSC JSS', a, 'swatantranigam9451@gmail.com',
             list_email, fail_silently=False)
             return HttpResponse("ok done")
@@ -51,3 +49,25 @@ def send_email(request):
         "form":form
     }
     return render(request,'email/input.html',context)
+
+def customEmail(request):
+    form = forms.CustomEmailForm()
+    if request.method=="POST":
+        form = forms.CustomEmailForm(request.POST)
+        excel_file = request.FILES["files"]
+        data = xlsx_get(excel_file, column_limit=1)
+        emails = data["Sheet1"]
+        list_email=[]
+        print(emails)
+        if form.is_valid():
+            body = form.cleaned_data["body"]
+            for email in emails:
+                for i in email:
+                    list_email.append(i) 
+            send_mail('DSC JSS', body, 'swatantranigam9451@gmail.com',
+            list_email, fail_silently=False)
+            return HttpResponse("ok done")
+    context = {
+        "form":form
+    }
+    return render(request,'email/custom.html',context)

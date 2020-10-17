@@ -1,0 +1,9 @@
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Select file to upload:
+    <input type="file" name="files" id="fileToUpload">
+    <br>
+    {{form}}
+    <br>
+    <input type="submit" value="Send Email" name="submit">
+</form>
