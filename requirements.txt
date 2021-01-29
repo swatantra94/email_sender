@@ -25,6 +25,7 @@ django-filter==2.2.0
 djangorestframework==3.12.1
 emoji==0.5.3
 entrypoints==0.3
+et-xmlfile==1.0.1
 gast==0.2.2
 google-pasta==0.1.7
 googletrans==3.0.0
@@ -48,6 +49,7 @@ ipykernel==5.1.0
 ipython==7.4.0
 ipython-genutils==0.2.0
 ipywidgets==7.4.2
+jdcal==1.4.1
 jedi==0.13.3
 Jinja2==2.10.1
 jsonschema==3.0.1
@@ -64,6 +66,7 @@ language-selector==0.1
 launchpadlib==1.10.6
 lazr.restfulclient==0.13.5
 lazr.uri==1.0.3
+lml==0.1.0
 louis==3.5.0
 macaroonbakery==1.1.3
 Mako==1.0.7
@@ -77,9 +80,11 @@ notebook==5.7.8
 numpy==1.17.0
 oauth==1.0.1
 olefile==0.45.1
+openpyxl==3.0.6
 pandas==0.25.0
 pandocfilters==1.4.2
 parso==0.4.0
+pbr==5.5.1
 pexpect==4.2.1
 pickleshare==0.7.5
 Pillow==5.1.0
@@ -91,6 +96,8 @@ ptyprocess==0.6.0
 pycairo==1.16.2
 pycrypto==2.6.1
 pycups==1.9.73
+pyexcel-io==0.6.4
+pyexcel-xlsx==0.6.0
 Pygments==2.3.1
 pygobject==3.26.1
 pymacaroons==0.13.0
@@ -126,6 +133,7 @@ tensorflow-estimator==1.14.0
 termcolor==1.1.0
 terminado==0.8.2
 testpath==0.4.2
+testresources==2.0.1
 tornado==6.0.2
 traitlets==4.3.2
 ubuntu-drivers-common==0.0.0
