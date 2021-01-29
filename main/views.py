@@ -27,6 +27,7 @@ def send_email(request):
             time = form.cleaned_data["time"]
             mentor = form.cleaned_data["mentor"]
             room = form.cleaned_data["room"]
+            link = form.cleaned_data["link"]
             a = a+' "'
             a = a+time
             a = a+'" '
@@ -37,11 +38,11 @@ def send_email(request):
             a=a+file.read(50)
             a = a+' room "'+room+'" '
             a=a+file.read()
+            a = a+' link '+link
             file.close()
             for email in emails:
                 for i in email:
                     list_email.append(i)
-            
             send_mail('DSC JSS', a, 'swatantranigam9451@gmail.com',
             list_email, fail_silently=False)
             return HttpResponse("ok done")
