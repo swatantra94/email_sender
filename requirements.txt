@@ -15,8 +15,4 @@ sqlparse==0.3.1
 systemd-python==234
 virtualenv==15.1.0
 virtualenv-clone==0.5.4
-<<<<<<< HEAD
 whitenoise==5.2.0
-=======
-whitenoise==5.2.0
->>>>>>> 6c720b10dd7d7c85ac6a5d5b279ff5cd932ceaac
