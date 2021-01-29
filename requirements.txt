@@ -85,7 +85,6 @@ pyrsistent==0.14.11
 pytz==2020.1
 pyxdg==0.25
 PyYAML==5.1.2
-pyzmq==18.0.1
 qtconsole==4.4.3
 reportlab==3.4.0
 requests==2.18.4
