@@ -81,8 +81,6 @@ pycups==1.9.73
 pyexcel-io==0.6.4
 pyexcel-xlsx==0.6.0
 pymacaroons==0.13.0
-pyrsistent==0.14.11
-pytz==2020.1
 pyxdg==0.25
 PyYAML==5.1.2
 qtconsole==4.4.3
