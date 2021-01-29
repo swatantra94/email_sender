@@ -24,8 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*q_^9=n&sib1njrk_um50!0=2jomk==8j$qq$%sd#5*^tcx2d1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 ALLOWED_HOSTS = ['email-sender-swat.herokuapp.com','127.0.0.1']
 
 
